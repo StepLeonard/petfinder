@@ -1,0 +1,97 @@
+:root {
+  --lightblue: #c6e6e4;
+  --darkblue: #183182;
+  --black: #333333;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background: linear-gradient(135deg, var(--lightblue), var(--darkblue));
+  color: black;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #e4eaf0;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  width: 600px;
+  margin: 3rem auto 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: #ccd1d1, solid;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  width: 7rem;
+  height: 3rem;
+
+  padding: 0.5rem;
+  background-color: #0f277c;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #ed8278;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.cards {
+  background-color: white;
+
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}

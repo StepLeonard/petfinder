@@ -65,7 +65,14 @@ function showPets(pets) {
 
     let name = pet.name;
     let breed = pet.breeds.primary;
-    let photo = pet.photos[0].medium;
+
+    let photo;
+    if (pet.photos && pet.photos.length > 0 && pet.photos[0].medium) {
+      photo = pet.photos[0].medium;
+    } else {
+      photo = "https://placehold.co/300x200?text=No+Image";
+    }
+
     let color = pet.colors.primary;
     const description = pet.description;
 
